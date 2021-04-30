@@ -31,5 +31,5 @@ jobs:
       run: make check_format
     - name: Run linter
       run: make lint
-    - name: Run tests (eunit, proper, ct)
+    - name: Run tests (eunit, proper)
       run: make test

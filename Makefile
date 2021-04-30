@@ -33,7 +33,7 @@ format:
 	$(REBAR) fmt -w
 
 test:
-	$(REBAR) do eunit, proper, ct
+	$(REBAR) do eunit, proper
 
 xref:
 	$(REBAR) xref
