@@ -19,8 +19,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: Fetch Deps
       run: make get_deps
-    - name: Ensure elvis is installed
-      run: make ensure_elvis
     - name: Compile
       run: make compile
     - name: Run Xref
