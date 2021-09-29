@@ -1,4 +1,4 @@
 [{<<"genlib">>,
   {git,"https://github.com/rbkmoney/genlib.git",
-       {ref,"4565a8d73f34a0b78cca32c9cd2b97d298bdadf8"}},
+       {ref,"82c5ff3866e3019eb347c7f1d8f1f847bed28c10"}},
   0}].

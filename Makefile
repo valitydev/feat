@@ -3,6 +3,8 @@ REBAR := $(shell which rebar3 2>/dev/null || which ./rebar3)
 .PHONY: get_deps ensure_elvis compile lint check_format \
     format test xref clean distclean dialyze plt_update
 
+all: test format lint xref dialyze
+
 get_deps:
 	$(REBAR) get-deps
 
@@ -32,7 +34,7 @@ distclean:
 	rm -rfv _build _builds _cache _steps _temp
 
 dialyze:
-	$(REBAR) dialyzer
+	$(REBAR) as test dialyzer
 
 plt_update:
-	$(REBAR) dialyzer -u true -s false
+	$(REBAR) as test dialyzer -u true -s false
